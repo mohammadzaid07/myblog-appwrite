@@ -1,4 +1,4 @@
-# 📝 MyBlog — A Minimal Full-Stack Blog App with Appwrite & React
+# 📝 A Minimal Full-Stack Blog App with Appwrite & React
 
 **MyBlog** is a clean, responsive blog app built with **React**, **Vite**, **Tailwind CSS**, and **Appwrite**.
 It allows users to **sign up, log in, create, edit, and delete posts**, with secure authentication and file/image handling.
@@ -76,7 +76,6 @@ npm run dev
 ```
 
 > App will be running at: `http://localhost:5173`
-
 
 ## 👤 Author
 
