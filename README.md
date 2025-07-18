@@ -1,12 +1,83 @@
-# React + Vite
+# 📝 MyBlog — A Minimal Full-Stack Blog App with Appwrite & React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**MyBlog** is a clean, responsive blog app built with **React**, **Vite**, **Tailwind CSS**, and **Appwrite**.
+It allows users to **sign up, log in, create, edit, and delete posts**, with secure authentication and file/image handling.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+🌐 [View on Vercel](https://myblog-appwrite.vercel.app)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Features
+
+- 🔐 Authentication (Sign up / Login / Logout)
+- 📝 Create, edit, delete blog posts
+- 🖼️ Upload & display post images
+- 🔍 View public posts
+- 👤 View your own posts
+- 🧾 Rich Text Editor using `TinyMCE`
+- 🧠 HTML parsing using `html-react-parser`
+- 💡 Responsive UI with Tailwind CSS
+- 📂 Masonry grid layout for post cards
+- ✅ Clean folder structure for scalability
+
+---
+
+## 🛠️ Tech Stack
+
+| Frontend            | Backend & Infra   | Tools & Libraries |
+| ------------------- | ----------------- | ----------------- |
+| React + Vite        | Appwrite Cloud    | Tailwind CSS      |
+| Redux Toolkit       | Appwrite Database | React Hook Form   |
+| React Router DOM    | Appwrite Storage  | TinyMCE (RTE)     |
+| Vercel (deployment) | Appwrite Auth     | html-react-parser |
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/mohammadzaid07/myblog-appwrite.git
+cd myblog-appwrite
+```
+
+### 2. Install Dependencies
+
+```
+npm install
+```
+
+### 3. Create `.env` File
+
+```
+cp .env.sample .env
+```
+
+Fill in your Appwrite credentials in .env file:
+
+```
+VITE_APPWRITE_URL=https://cloud.appwrite.io/v1
+VITE_APPWRITE_PROJECT_ID=your_project_id
+VITE_APPWRITE_DATABASE_ID=your_database_id
+VITE_APPWRITE_COLLECTION_ID=your_collection_id
+VITE_APPWRITE_BUCKET_ID=your_bucket_id
+
+```
+
+### 4. Run Locally
+
+```
+npm run dev
+```
+
+> App will be running at: `http://localhost:5173`
+
+
+## 👤 Author
+
+Made by [Mohammad Zaid](https://www.linkedin.com/in/mohammadzaid07/)
