@@ -16,6 +16,8 @@ import MyPosts from './pages/MyPosts.jsx'
 import TermsAndConditions from './pages/TermsAndConditions.jsx'
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
 import ContactUs from './pages/ContactUs.jsx'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 
 const router = createBrowserRouter([
   {
@@ -93,6 +95,8 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={store}>
       <RouterProvider router={router} />
+      <Analytics />
+      <SpeedInsights />
     </Provider>
   </StrictMode>,
 )
